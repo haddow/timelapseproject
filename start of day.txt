@@ -1,0 +1,13 @@
+START OF DAY SEQUENCE
+—
+ssh in
+cd /media/Pi/[usb name]/
+nohup python3 camera.py &
+
+
+END OF DAY SEQUENCE
+—
+ssh in
+ps -aux | grep python
+kill [process number]
+shutdown -h now
